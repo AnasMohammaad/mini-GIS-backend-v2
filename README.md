@@ -61,7 +61,7 @@ This project is a GIS-enabled backend service designed to manage Points of Inter
 | `POST` | `/api/locations` | Create a new location. |
 | `GET` | `/api/locations/{id}` | Retrieve a single location by ID. |
 | `GET` | `/api/locations/geojson` | **GIS Special:** Returns locations as a GeoJSON FeatureCollection. |
-| `GET` | `/api/locations/category-summary` | **:** Returns a count of locations per category. |
+| `GET` | `/api/locations?category=` | **:** Returns a count of locations per category. |
 
 ## 🌍 How to View the Map
 1.  Ensure the Laravel server is running (`php artisan serve`).
