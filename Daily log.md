@@ -45,4 +45,4 @@
 * *Issue:* Markers were not showing up initially.
 * *Solution:* Realized I needed to wait for the map 'load' event before fetching data. Also verified the token was correct.
 
-## Day 5 Tue 13 Jan 2026:
+## Day 5 Tue 13 Jan 2026:Pagination, Category Summary, and Docker.
