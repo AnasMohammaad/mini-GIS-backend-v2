@@ -99,4 +99,13 @@ class LocationCntroller extends Controller
             'features' => $features
         ]);
     }
+    public function categorySummary()
+    {
+        // Count locations grouped by category
+        $summary = Location::select('category', DB::raw('count(*) as total'))
+            ->groupBy('category')
+            ->get();
+
+        return response()->json($summary);
+    }
 }
