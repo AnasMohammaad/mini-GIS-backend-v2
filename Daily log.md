@@ -46,6 +46,6 @@
 * *Solution:* Realized I needed to wait for the map 'load' event before fetching data. Also verified the token was correct.
 
 ## Day 5 Tue 13 Jan 2026:Pagination, Category Summary, and Docker.
-* *Issue:* Docke setup problem.
+* *Issue:* Docke setup problem, The device does not meet the requirements.
 
 ## Day 6 Wed 14 Jan 2026:Review
