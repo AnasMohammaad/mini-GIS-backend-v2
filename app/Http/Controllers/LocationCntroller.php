@@ -21,11 +21,22 @@ class LocationCntroller extends Controller
         return response()->json(['message' => 'Location add successfully'], 200);
     }
 
-    public function index() // see all locations
+    public function index()
     {
-        $locations = Location::all();
+        // OLD: return Location::all();
+
+        // NEW: Return 5 locations per page
+        $locations = Location::paginate(5);
+
         return response()->json($locations);
     }
+
+    // public function index() // see all locations
+    // {
+    //     $locations = Location::all();
+    //     return response()->json($locations);
+    // }
+
 
     public function show($id)
     {
